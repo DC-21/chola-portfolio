@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    padding-left: 15px;
+}
+header{
+    margin: 10px 10px;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 22px 15px;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+}
+.logo{
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: red;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 35px;
+    padding-right: 20px;
+    transition: all .4s ease;
+}
+.navbar a:hover{
+    color: blue;
+}
+.navbar a.active{
+    color: blue;
+}
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section{
+    padding: 160px 15px 120px;
+}
+.home{
+    position: relative;
+    height: 100mh;
+    width: 100%;
+    background-image: url(img/dc3.JPG);
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 5px;
+    line-height: 32px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.two{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 5px;
+    line-height: 32px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.home-text h1{
+    display: inline-block;
+    height: 45px;
+    padding: 0 5px;
+    margin-right: 15px;
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+    list-style: 1.1;
+    background-color: white;
+    border-radius: 5px;
+    line-height: 1.1;
+}
+.home-text h3{
+    padding: 0 5px;
+    color: black;
+    display: block;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 5px 5px;
+}
+.button{
+    display: inline-flex;
+    color: rgb(247, 228, 228);
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    padding: 2px 4px;
+    background-image: url(img/doc.JPG);
+    margin-top: 10px;
+}
+.button:hover{
+    transform: scale(0.9);
+    color: blue;
+}
+header.sticky{
+    background: white;
+    border-bottom: 1px solid white;
+    padding: 12px 15%;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-image img{
+    max-width: 500px;
+    height: 60%;
+    width: 80%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: x-large;
+    font-weight: 800;
+    line-height: 1;
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: black;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: large;
+}
+.services{
+    background: white;
+}
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    font-size: x-large;
+    line-height: 1;
+}
+.services-content{
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box{
+    background-image: url(img/doc.JPG);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.box p{
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.Read{
+    display: inline-block;
+    padding: 8px 18px;
+    background: white;
+    color: blue;
+    font-size: 15px;
+    font-weight: 500;
+}
+.Read:hover{
+    letter-spacing: 1px;
+    background: blue;
+    color: white;
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.Portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #8a314d);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+.layer h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: black;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.contact{
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.contact-text h4{
+    color: black;
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-text h2{
+    font-size: 20;
+    line-height: 1;
+}
+.contact-text p{
+    color: black;
+    font-size: 30;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: black;
+    font-size: 14px;
+    transition: all .45s ease;
+}
+.list li a:hover{
+    color: blue;
+    transform: translate(5px);
+}
+
+.contact-icons{
+    height: 45px;
+    width: 45px;
+    background: white;
+    color: black;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover{
+    background: blue;
+    color: white;
+}
+
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background: black;
+    color: white;
+    border: none;
+    background-image: url(img/doc.JPG);
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.contact-form textarea{
+    resize: none;
+    height: 250px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 15px;
+    background-image: url(img/dc1.JPG);
+    color: black;
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: blue;
+}
+
+.footer{
+    padding: 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    background: white;
+}
+.footer-text{
+    color: white;
+    font-size: 16px;
+    padding: 1% 2%;
+    border-radius: 20p 20px;
+    background: black;
+}
+
+@media (max-width: 1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px  2.5%;
+        transition: .1s;
+    }
+    
+}
